@@ -1,0 +1,9 @@
+server:
+    servlet:
+        context-path: /api/
+    port:
+        9091
+        
+spring:
+    profiles:
+        active: postgresql

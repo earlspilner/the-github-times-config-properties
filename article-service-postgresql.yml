@@ -1,0 +1,16 @@
+# Init database
+spring:
+    sql:
+        init:
+            mode: always
+            schema-locations: classpath*:db/postgresql/init.sql
+    datasource:
+        url: jdbc:postgresql://localhost:5432/articles_db
+        username: postgres
+        password: root
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        database: POSTGRESQL
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        hibernate:
+            ddl-auto: none
