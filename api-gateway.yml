@@ -1,0 +1,9 @@
+zuul:
+    prefix: /api
+    ignoredServices: '*'
+    routes:
+        authentication-server: /auth/**
+        users-service: /users/**
+        
+server:
+    port: 8080
